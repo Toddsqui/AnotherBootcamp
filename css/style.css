@@ -1,0 +1,103 @@
+body, html {
+  height: 100%;
+  background-color: #13293D;
+}
+
+body {
+  
+}
+
+/******** HERO Styling ********/
+.hero {
+  background-color: #006494;
+  color: white;
+  height: 50%;
+  
+  display: flex; 
+    /* Flex - Enable the flex properties */
+  
+  align-items: center; 
+    /* Flex - Vertically align contents in the middle
+    Options include:
+      align-items: flex-start; (Vertically align contents at the top)
+      align-items: flex-end; (Vertically align contents at the bottom) */
+  
+  justify-content: center; 
+    /* Flex - Horizontally align contents in the middle
+    Options include:
+      justify-content: flex-start; (Horizontally align contents at the left)
+      justify-content: flex-end; (Horizontally align contents at the right) */
+}
+
+ul, li {
+  margin: 0;
+  list-style: none;
+}
+
+nav ul {
+  background-color: #1B98E0;
+  padding: 0;
+  
+  display: flex;
+}
+
+nav li {
+  color: white;
+  text-align: center;
+  
+  flex: 1; 
+    /* Flex - Equally distributes the width for each item, since they're all the same value. If one had a higher flex number, then that element would take up a greater width */
+}
+
+nav li a {
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  transition: background .4s, color .4s;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: #006494;
+}
+
+
+
+/******** PAGE CONTAINER Styling ********/
+
+.page-container {
+  display: flex;
+  flex-direction: row; 
+    /* Flex - Specifies if the items inside the element should be displayed as a row or column and in which order. 
+    Options include: 
+      - row (displays the container as a row with columns inside it)
+      - row-reverse (Reverse Order:  displays the container as a row with columns inside it
+      - column (displays the container as a single column with the child elements on each row) 
+      - column-reverse (Reverse Order: displays the container as a single column with the child elements on each row) */
+}
+
+.page-container .box {
+  padding: 15px;
+  
+  flex: 1;
+}
+
+
+
+/******** MEDIA OBJECT Styling ********/
+.Media {
+  display: flex;
+  background: #E8F1F2;
+  padding: 20px;
+}
+
+.Media__figure {
+  margin-right: 1em;
+}
+
+.Media__body p:first-child {
+  margin-top: 0;
+}
